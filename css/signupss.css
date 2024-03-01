@@ -1,0 +1,232 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to bottom, #fdfdfd, #8AC59D);
+    height: 100vh;
+}
+
+/* -------------------------------------------NAVBAR */
+
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    position: absolute;
+    width: 200px;
+    margin-top: -30px;
+}
+
+.navbar-area{
+    display: flex;
+    width: 50%;
+    height: 5%;
+    justify-content: space-evenly;
+    margin: 2.5rem 0rem 0rem 10rem;
+    padding: .5rem 0px .5rem 1rem;
+    background-color: #114B5F;
+
+}
+
+.navbar-area li {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    width: 10%;
+}
+
+.navbar-area li a:link, 
+.navbar-area li a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-area li a:hover{
+    background-color: #ffffff;
+    color: #114B5F;
+    padding: 0.3rem;
+}
+
+/* -------------------------------------------SEARCHBAR */
+.searchContainer{
+    margin: auto;
+    margin-top: 2rem;
+    position: relative;
+    width: 25rem;
+    height: 2.5rem;
+    border: 4px solid #114B5F;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+.textContainer{
+    width: 100%;
+    height: 95%;
+    vertical-align: middle;
+}
+
+.search{
+    border: none;
+    height: 100%;
+    width: 98%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "Nunito";
+    color: #114B5F;
+    font-weight: 500;
+    background: transparent;
+}
+
+.search:focus{
+    outline: none;
+}
+
+/* -------------------------------------------LOGIN/REGISTER */
+
+.signup-box{
+    margin: 1rem 2rem 1rem -4rem;
+    position: relative;
+    background-color: #114B5F;
+    height: 5.3rem;
+    width: 7rem;
+    border-radius: 20%;
+}
+
+.signup-box li,
+.signup-box:link,
+.signup-box:visited
+    {
+    list-style-type: none;
+    text-decoration: none;
+    padding: .7rem 0px;
+    line-height: 0.5;
+    color: #ffffff;
+    text-align: center;
+}
+
+.signup-box #horizontal-line{
+    position: absolute;
+    right: 1.5rem;
+    top: 2.6rem;
+    width: 65px;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+.signup-box:hover {
+    background-color: #e6e6e6;
+} 
+
+.signup-box:hover li
+{
+    color: #114B5F;
+}
+
+.signup-box:hover #horizontal-line{
+    background-color: #114B5F;
+}
+
+
+/* -------------------------------------------SIGNUP BOX */
+
+.main-1{
+    margin-top: 100px;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Jost', sans-serif;
+}
+
+.main-2{
+	width: 350px;
+	height: 500px;
+	background: #114B5F;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+.signup input,
+.login input{
+	width: 70%;
+	height: 40px;
+	background: #ffffff;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.login button,
+.signup button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #1a936f;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #11624a;
+}
+.login{
+	height: 460px;
+    margin-top: 50px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #114B5F;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+
+@media all and (max-width: 1400px){
+    .main-1{
+        margin-top: 20px;
+    }
+  }

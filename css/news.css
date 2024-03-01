@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family-Roboto:wght@300;400;500');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to bottom, #fdfdfd, #8AC59D);
+    height: 100%;
+    background-repeat: no-repeat;
+
+}
+
+/* -------------------------------------------NAVBAR */
+
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    position: absolute;
+    width: 200px;
+    margin-top: -30px;
+}
+
+.navbar-area{
+    display: flex;
+    width: 50%;
+    height: 5%;
+    justify-content: space-evenly;
+    margin: 2.5rem 0rem 0rem 10rem;
+    padding: .5rem 0px .5rem 1rem;
+    background-color: #114B5F;
+
+}
+
+.navbar-area li {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    width: 10%;
+}
+
+.navbar-area li a:link, 
+.navbar-area li a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-area li a:hover{
+    background-color: #ffffff;
+    color: #114B5F;
+    padding: 0.3rem;
+}
+
+
+/* -------------------------------------------SEARCHBAR */
+.searchContainer{
+    margin: auto;
+    margin-top: 2rem;
+    position: relative;
+    width: 25rem;
+    height: 2.5rem;
+    border: 4px solid #114B5F;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+.textContainer{
+    width: 100%;
+    height: 95%;
+    vertical-align: middle;
+}
+
+.search{
+    border: none;
+    height: 100%;
+    width: 98%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "Nunito";
+    color: #114B5F;
+    font-weight: 500;
+    background: transparent;
+}
+
+.search:focus{
+    outline: none;
+}
+
+/* -------------------------------------------PROFILE */
+
+
+.profile-pic img{
+    width: 60px;
+    margin: 24px 90px 0px -30px;
+}
+
+
+/* -------------------------------------------ARTICLE */
+
+
+.blog-section{
+    width: 100%;
+}
+
+.blog-section .section-content{
+    width: 85%;
+    margin: 20px auto;
+}
+
+.blog-section .section-content .title{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.blog-section .section-content .title h2{
+    font-size: 40px;
+    color: #23d25d;
+    text-transform: uppercase;
+}
+
+.blog-section .section-content .title p{
+    font-size: 18px;
+    color: #6a6a6a;
+    margin-top: 20px;
+}
+
+.blog-section .section-content .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+
+.blog-section .section-content .cards .card{
+    width: 100%;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.blog-section .section-content .cards .card img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-section .section-content .cards .card .article{
+    padding: 15px 20px;
+}
+
+.blog-section .section-content .cards .card .article h4{
+    font-size: 24px;
+    color: #4a4a4a;
+
+}
+
+.blog-section .section-content .cards .card .article p{
+    font-size: 16px;
+    margin: 10px 0px;
+    color: #6a6a6a;
+
+}
+
+.blog-section .section-content .cards .card a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #25c5c5;
+    padding: 8px 15px;
+    margin-left: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.blog-section .section-content .cards .card .posted-date p{
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #25c5c5;
+    padding:6px 15px;
+}
+
+@media screen and (max-width: 992px){
+    .blog-section .section-content .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .blog-section .section-content .cards{
+        grid-template-columns: 1fr;
+    }
+}

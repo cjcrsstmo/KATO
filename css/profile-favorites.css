@@ -1,0 +1,164 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to bottom, #fdfdfd, #8AC59D);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------------------------NAVBAR */
+
+header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    position: absolute;
+    width: 200px;
+    margin-top: -30px;
+}
+
+.navbar-area{
+    display: flex;
+    width: 50%;
+    height: 5%;
+    justify-content: space-evenly;
+    margin: 2.5rem 0rem 0rem 10rem;
+    padding: .5rem 0px .5rem 1rem;
+    background-color: #114B5F;
+
+}
+
+.navbar-area li {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    width: 10%;
+}
+
+.navbar-area li a:link, 
+.navbar-area li a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-area li a:hover{
+    background-color: #ffffff;
+    color: #114B5F;
+    padding: 0.3rem;
+}
+
+
+/* -------------------------------------------SEARCHBAR */
+.searchContainer{
+    margin: auto;
+    margin-top: 2rem;
+    position: relative;
+    width: 25rem;
+    height: 2.5rem;
+    border: 4px solid #114B5F;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+.textContainer{
+    width: 100%;
+    height: 95%;
+    vertical-align: middle;
+}
+
+.search{
+    border: none;
+    height: 100%;
+    width: 98%;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "Nunito";
+    color: #114B5F;
+    font-weight: 500;
+    background: transparent;
+}
+
+.search:focus{
+    outline: none;
+}
+
+/* -------------------------------------------PROFILE */
+
+
+.profile-pic img{
+    width: 60px;
+    margin: 24px 90px 0px -30px;
+}
+
+
+/* -------------------------------------------TITLE BOX GALLERY */
+
+.titleBox img{
+    width: 41rem;
+    display: block;
+    margin: auto;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+/* -------------------------------------------IMAGES*/
+.imgcontainer{
+    max-width: 85%;
+    margin:30px auto;
+}
+
+
+
+.imgcontainer .image-container{
+    columns:5 250px;
+    gap:15px;
+}
+
+.imgcontainer .image-container img{
+    border-radius: 5px;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+}
+
+/* -------------------------------------------PROFILE*/
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px 0px 50px 0px;
+}
+
+.profile-part img{
+    width: 200px;
+}
+
+.profile-actions a{
+    text-decoration: none;
+    color: #114B5F;
+    font-size: large;
+    font-weight: 400;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
